@@ -49,6 +49,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-left: auto;
+            margin-right: 30%;
         }
 
         .circle:hover {
@@ -74,9 +76,20 @@
         /* <!-- 2nd part on how to stop flaming --> */
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
+            height: 100vh;
+            background-image: url('flame.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .outlined-text {
+            text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
         }
 
         header {
@@ -90,21 +103,25 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #000000;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
 
         h1 {
             font-size: 28px;
-            color: #333;
+            color: #ffffff;
             text-align: center;
             margin-bottom: 20px;
         }
 
+        h2 {
+            color: #ffffff;
+        }
+
         p {
             font-size: 18px;
-            color: #555;
+            color: #ffffff;
         }
 
         ul {
@@ -147,8 +164,8 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="text-center mt-5">
+    <div class="container-fluid outlined-text">
+        <div class="text-center mt-5 ">
             <h1>How to Stop Flaming</h1>
             <p>Stopping flaming in cyberbullying requires a combination of preventive measures, intervention
                 strategies,
@@ -189,11 +206,11 @@
         </div>
     </div>
 
-    <header>
-        <h1>Dealing with Cyberbullying</h1>
+    <header class="bg-transparent">
+        <h1 class="outlined-text">Dealing with Cyberbullying</h1>
     </header>
 
-    <div class="container">
+    <div class="container text-white">
         <p><strong>What you should do when faced with flaming:</strong></p>
         <ul>
             <li>
